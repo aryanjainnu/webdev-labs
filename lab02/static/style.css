@@ -1,0 +1,90 @@
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h2{
+    text-align: center;
+    font-family: Copperplate,Copperplate Gothic Light,fantasy;
+    text-transform: capitalize;
+    font-size:xx-large;
+}
+
+#restname {
+    text-align: center;
+    font-family: Copperplate,Copperplate Gothic Light,fantasy;
+}
+
+#restimg{
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.container {
+    width: 100%;
+    padding-top: 75%; 
+    position: relative; /* found the idea of a container online to make the cards the same size */
+    overflow:hidden;
+  } 
+
+#subsec{
+    border-top: solid 1px lightgray;
+}
+
+#subline{
+    padding-left: 1%;
+}
+
+#restaddy {
+    text-align: center;
+}
+
+#maincard {
+    border: solid 1px lightgray;
+    width: 22.5%;
+    margin: 1%;
+    height: 50%;
+    display: inline-block;
+}
+
+header {
+    padding: 3vh;
+    background: #EEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    width: 250px;
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    margin: 3vh;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #maincard {
+        width: 47%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #maincard {
+        width: 97%;
+    }
+}
